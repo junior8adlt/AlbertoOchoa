@@ -639,6 +639,9 @@ footer .correo a{
   footer .container{
     margin-top: 10% !important;
   }
+  footer ul li {
+    margin-left: 1px !important;
+  }
   footer ul li a {
     color: #212121;
     text-decoration: none;
