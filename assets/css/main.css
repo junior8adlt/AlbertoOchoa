@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
-html{
+html {
   width: 100%;
   height: 100%;
-
 }
 /* width */
 ::-webkit-scrollbar {
@@ -183,7 +182,7 @@ header .toggle:checked + .hamburger .bar::after {
   transition: all 0.3s ease;
   font-family: 'Rubik Mono One', sans-serif;
 }
-.menu ul{
+.menu ul {
   margin-top: 15%;
 }
 .menu ul li {
@@ -199,7 +198,6 @@ header .toggle:checked + .hamburger .bar::after {
   font-size: 3em;
   text-decoration: none;
   color: #f3f3f3;
-
 }
 
 .menu ul li a:hover {
@@ -256,45 +254,262 @@ main .about .about-me {
 }
 
 .Iknow .knowladge h3 {
-    font-family: 'Rubik Mono One', sans-serif;
-    font-size: 3em;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: #14ffec
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 3em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #14ffec;
 }
 .Iknow .knowladge i {
-    color: #14ffec;
-    font-size: 5em;
+  color: #14ffec;
+  font-size: 5em;
 }
-.Iknow .knowladge .icon{
-    margin-bottom: 3%;
+.Iknow .knowladge .icon {
+  margin-bottom: 3%;
 }
-.Iknow .knowladge .icon p{
-    color: #14ffec;
-    font-family: 'Righteous', cursive;
+.Iknow .knowladge .icon p {
+  color: #14ffec;
+  font-family: 'Righteous', cursive;
 }
 
-.education{
+.education {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   padding: 15px;
   box-sizing: border-box;
-  background: #0d7377;  
+  background: #0d7377;
 }
-.education h3{
-    font-family: 'Rubik Mono One', sans-serif;
-    font-size: 3em;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: #212121;
-    text-align: center;
+.education h3 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 3em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #212121;
+  text-align: center;
 }
 
+.education-time {
+  margin-top: 20%;
+}
+.education-time ul {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1px 100px;
+  color: #fff;
+  font-size: 13px;
+}
+.education-time ul:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed #fff;
+}
+.education-time ul li {
+  position: relative;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  width: 500px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+.education-time ul li:not(:first-child) {
+  margin-top: 60px;
+}
+.education-time ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.education-time ul li > span:before,
+.education-time ul li > span:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #212121;
+  left: -5px;
+  top: 0;
+}
+.education-time ul li span:after {
+  top: 100%;
+}
+.education-time ul li > div {
+  margin-left: 10px;
+}
+.education-time div .title,
+.education-time div .type {
+  font-weight: 600;
+  font-size: 16px;
+}
 
+.education-time div > div {
+  margin-top: 5px;
+}
+.education-time span.number {
+  height: 100%;
+}
+.education-time span.number span {
+  position: absolute;
+  font-size: 10px;
+  left: -35px;
+  font-weight: bold;
+}
+.education-time span.number span:first-child {
+  top: 0;
+}
+.education-time span.number span:last-child {
+  top: 100%;
+}
+
+.work {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #212121;
+}
+
+.work h3 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 3em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #0d7377;
+  text-align: center;
+}
+.work-time{
+  margin-top: 25%;
+}
+.work-time ul {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1px 100px;
+  color: #fff;
+  font-size: 13px;
+}
+.work-time ul:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed #fff;
+}
+.work-time ul li {
+  position: relative;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  width: 500px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+.work-time ul li:not(:first-child) {
+  margin-top: 60px;
+}
+.work-time ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.work-time ul li > span:before,
+.work-time ul li > span:after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #0d7377;
+  left: -5px;
+  top: 0;
+}
+.work-time ul li span:after {
+  top: 100%;
+}
+.work-time ul li > div {
+  margin-left: 10px;
+}
+.work-time div .title,
+.work-time div .type {
+  font-weight: 600;
+  font-size: 16px;
+}
+.work-time div .info {
+  font-weight: 300;
+  font-size: 16px;
+}
+.work-time div > div {
+  margin-top: 5px;
+}
+.work-time span.number {
+  height: 100%;
+}
+.work-time span.number span {
+  position: absolute;
+  font-size: 10px;
+  left: -35px;
+  font-weight: bold;
+}
+.work-time span.number span:first-child {
+  top: 0;
+}
+.work-time span.number span:last-child {
+  top: 100%;
+}
+
+footer{
+  height: 20vh;
+  background-color: #0d7377;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: 'Righteous', cursive;
+
+}
+
+footer ul {
+  display: inline-block;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-left: 10px
+}
+
+footer ul li a {
+  color: #212121;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+footer ul li a:hover{
+  color: #212121d5;
+  text-decoration: none;
+}
+
+footer .correo a{
+  color: #212121;
+  font-size: 1.5em;
+}
 @media screen and (max-width: 600px) {
-  
   header .me h1 {
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 1.75em;
@@ -317,8 +532,8 @@ main .about .about-me {
     border: 4px solid #14ffec;
     border-radius: 60px;
   }
- 
-  .menu ul{
+
+  .menu ul {
     margin-top: 50%;
     width: 100%;
   }
@@ -329,12 +544,11 @@ main .about .about-me {
     box-sizing: 15px;
     width: 100%;
   }
-  
+
   .menu ul li a {
     font-size: 2em;
     text-decoration: none;
     color: #f3f3f3;
-  
   }
   main {
     height: 100%;
@@ -370,23 +584,66 @@ main .about .about-me {
     box-sizing: border-box;
     background: #212121;
   }
-  
+
   .Iknow .knowladge h3 {
-      font-family: 'Rubik Mono One', sans-serif;
-      font-size: 1.25em;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      color: #14ffec
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.25em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #14ffec;
   }
   .Iknow .knowladge i {
-      color: #14ffec;
-      font-size: 3em;
+    color: #14ffec;
+    font-size: 3em;
   }
-  .Iknow .knowladge .icon{
-      margin-bottom: 3%;
+  .Iknow .knowladge .icon {
+    margin-bottom: 3%;
   }
-  .Iknow .knowladge .icon p{
-      color: #14ffec;
-      font-family: 'Righteous', cursive;
+  .Iknow .knowladge .icon p {
+    color: #14ffec;
+    font-family: 'Righteous', cursive;
   }
+  .education{
+    height: 80vh;
+  }
+  .education h3{
+    font-size: 1.25em;
+  }
+
+  .education-time ul {
+    transform: translate(-55%, -12%);
+  }
+  .education-time ul li {
+    width: 250px;
+  }
+  .work{ 
+    height: 120vh;
+  }
+  .work h3{
+    font-size: 1.25em;
+  }
+
+  .work-time ul {
+    transform: translate(-55%, -12%);
+  }
+  .work-time ul li {
+    width: 250px;
+  }
+
+  footer{
+    height: 40vh;
+  }
+  footer .container{
+    margin-top: 10% !important;
+  }
+  footer ul li a {
+    color: #212121;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  footer .correo a{
+    color: #212121;
+    font-size: 2em;
+  }
+  
 }
